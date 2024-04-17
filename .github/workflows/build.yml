@@ -144,9 +144,9 @@ jobs:
 
     strategy:
       matrix:
-        VERSION: [21.02, 23.05]
+        VERSION: [23.05]
         CPU: [rk3328]
-        SET: [docker, non-docker]
+        SET: [docker]
     steps:
     - name: Checkout
       uses: actions/checkout@main
