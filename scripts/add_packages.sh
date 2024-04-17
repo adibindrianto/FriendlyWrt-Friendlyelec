@@ -32,3 +32,29 @@ function init_theme() {
 EOL
 sed -i -e '/boardname=/r /tmp/appendtext.txt' friendlywrt/target/linux/rockchip/armv8/base-files/root/setup.sh
 # }}
+
+sed -i -e '/CONFIG_PACKAGE_kmod-fs-ext4=y/d' configs/rockchip/01-nanopi
+sed -i -e '/CONFIG_PACKAGE_e2fsprogs=y/d' configs/rockchip/01-nanopi
+sed -i -e '/CONFIG_PACKAGE_kmod-fs-ext4=y/d' configs/rockchip/01-nanopi
+sed -i -e '/CONFIG_PACKAGE_kmod-fs-ext4=y/d' configs/rockchip/01-nanopi
+sed -i -e '/CONFIG_PACKAGE_kmod-fs-ext4=y/d' configs/rockchip/01-nanopi
+sed -i -e '/CONFIG_PACKAGE_kmod-fs-ext4=y/d' configs/rockchip/01-nanopi
+sed -i -e '/CONFIG_PACKAGE_kmod-fs-ext4=y/d' configs/rockchip/01-nanopi
+sed -i -e '/CONFIG_PACKAGE_kmod-fs-ext4=y/d' configs/rockchip/01-nanopi
+sed -i -e '/CONFIG_PACKAGE_kmod-fs-ext4=y/d' configs/rockchip/01-nanopi
+sed -i -e '/CONFIG_PACKAGE_kmod-fs-ext4=y/d' configs/rockchip/01-nanopi
+sed -i -e '/CONFIG_PACKAGE_kmod-fs-ext4=y/d' configs/rockchip/01-nanopi
+sed -i -e '/CONFIG_PACKAGE_kmod-fs-ext4=y/d' configs/rockchip/01-nanopi
+sed -i -e '/CONFIG_PACKAGE_kmod-fs-ext4=y/d' configs/rockchip/01-nanopi
+sed -i -e '/CONFIG_PACKAGE_kmod-fs-ext4=y/d' configs/rockchip/01-nanopi
+sed -i -e '/CONFIG_PACKAGE_kmod-fs-ext4=y/d' configs/rockchip/01-nanopi
+sed -i -e '/CONFIG_PACKAGE_kmod-fs-ext4=y/d' configs/rockchip/01-nanopi
+sed -i -e '/CONFIG_PACKAGE_kmod-fs-ext4=y/d' configs/rockchip/01-nanopi
+sed -i -e '/CONFIG_PACKAGE_kmod-fs-ext4=y/d' configs/rockchip/01-nanopi
+sed -i -e '/CONFIG_PACKAGE_kmod-fs-ext4=y/d' configs/rockchip/01-nanopi
+sed -i -e '/CONFIG_PACKAGE_kmod-fs-ext4=y/d' configs/rockchip/01-nanopi
+sed -i -e '/CONFIG_PACKAGE_kmod-fs-ext4=y/d' configs/rockchip/01-nanopi
+sed -i -e '/CONFIG_PACKAGE_kmod-fs-ext4=y/d' configs/rockchip/01-nanopi
+sed -i -e '/CONFIG_PACKAGE_kmod-fs-ext4=y/d' configs/rockchip/01-nanopi
+sed -i -e '/CONFIG_PACKAGE_kmod-fs-ext4=y/d' configs/rockchip/01-nanopi
+sed -i -e '/CONFIG_PACKAGE_kmod-fs-ext4=y/d' configs/rockchip/01-nanopi
