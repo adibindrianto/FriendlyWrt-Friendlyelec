@@ -4,7 +4,6 @@ on:
     types: started
   workflow_dispatch:
 jobs:
-  prepare_release:
     runs-on: ubuntu-20.04
     if: github.event.repository.owner.id == github.event.sender.id
 
