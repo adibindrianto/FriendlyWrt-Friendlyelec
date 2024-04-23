@@ -89,12 +89,6 @@ jobs:
         EOL
         echo "##[set-output name=img_filename;]$FILENAME"
 
-    - name: Unpack friendlywrt rootfs
-      run: |
-        cd project
-        [ "${{ matrix.SET }}" == "docker" ] && SUFFIX="-docker"
-        tar xvzf "../rootfs-friendlywrt-${{ matrix.VERSION }}${SUFFIX}.tgz"
-
     - name: Compile uboot and kernel
       run: |
         cd project
