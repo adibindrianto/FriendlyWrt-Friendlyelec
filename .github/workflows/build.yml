@@ -2,6 +2,7 @@ name: FriendlyWrt
 on:
   watch:
     types: started
+  workflow_dispatch:
 jobs:
   prepare_release:
     runs-on: ubuntu-20.04
@@ -142,9 +143,9 @@ jobs:
 
     strategy:
       matrix:
-        VERSION: [21.02, 23.05]
-        CPU: [rk3328, rk3399, rk3568, rk3588]
-        SET: [docker, non-docker]
+        VERSION: [23.05]
+        CPU: [rk3328]
+        SET: [docker]
     steps:
     - name: Checkout
       uses: actions/checkout@main
