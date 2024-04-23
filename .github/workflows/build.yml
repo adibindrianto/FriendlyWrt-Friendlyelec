@@ -4,7 +4,7 @@ on:
     types: started
   workflow_dispatch:
 jobs:
-    needs: [prepare_release,build_friendlywrt]
+  prepare_release:
     runs-on: ubuntu-20.04
     if: github.event.repository.owner.id == github.event.sender.id
 
