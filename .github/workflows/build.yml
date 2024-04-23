@@ -68,13 +68,11 @@ jobs:
         repo init --depth=1 -u https://github.com/friendlyarm/friendlywrt_manifests -b master-v${{ matrix.VERSION }} \
                 -m rk3399.xml --repo-url=https://github.com/friendlyarm/repo  --no-clone-bundle
 
-        repo sync -c friendlywrt --no-clone-bundle
-        repo sync -c configs --no-clone-bundle
-        repo sync -c device/common --no-clone-bundle
-        repo sync -c device/friendlyelec --no-clone-bundle
-        repo sync -c scripts --no-clone-bundle
-        repo sync -c scripts/sd-fuse  --no-clone-bundle
-        repo sync -c toolchain  --no-clone-bundle
+         repo sync -c scripts --no-clone-bundle
+         repo sync -c scripts/sd-fuse  --no-clone-bundle
+         repo sync -c toolchain  --no-clone-bundle
+         (cd kernel && git checkout nanopi-r2-v5.15.y)
+         (cd scripts/sd-fuse && git checkout kernel-5.15.y)
 
     - name: Apply customizations
       run: |
@@ -178,15 +176,11 @@ jobs:
         repo init --depth=1 -u https://github.com/friendlyarm/friendlywrt_manifests -b master-v${{ matrix.VERSION }} \
                 -m ${{ matrix.CPU }}.xml --repo-url=https://github.com/friendlyarm/repo  --no-clone-bundle
 
-        repo sync -c kernel --no-clone-bundle
-        repo sync -c u-boot --no-clone-bundle
-        repo sync -c rkbin --no-clone-bundle
-        repo sync -c configs --no-clone-bundle
-        repo sync -c device/common --no-clone-bundle
-        repo sync -c device/friendlyelec --no-clone-bundle
-        repo sync -c scripts --no-clone-bundle
-        repo sync -c scripts/sd-fuse  --no-clone-bundle
-        repo sync -c toolchain  --no-clone-bundle
+         repo sync -c scripts --no-clone-bundle
+         repo sync -c scripts/sd-fuse  --no-clone-bundle
+         repo sync -c toolchain  --no-clone-bundle
+         (cd kernel && git checkout nanopi-r2-v5.15.y)
+         (cd scripts/sd-fuse && git checkout kernel-5.15.y)
 
     - name: Download friendlywrt rootfs (non-docker)
       if: matrix.SET == 'non-docker'
