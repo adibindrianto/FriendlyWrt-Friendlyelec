@@ -1,3 +1,4 @@
+name: FriendlyWrt
 on:
   watch:
     types: started
