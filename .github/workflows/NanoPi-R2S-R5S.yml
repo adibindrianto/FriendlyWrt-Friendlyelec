@@ -1,4 +1,4 @@
-name: Nano-Pi-R5S
+name: NanoPi-R2S-R5S
 on:
   watch:
     types: started
@@ -145,7 +145,7 @@ jobs:
     strategy:
       matrix:
         VERSION: [23.05]
-        CPU: [rk3568]
+        CPU: [rk3328, rk3568]
         SET: [docker]
     steps:
     - name: Checkout
