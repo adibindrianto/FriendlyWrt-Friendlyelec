@@ -1,4 +1,4 @@
-name: FriendlyWrt
+name: Nano-Pi-R2S
 on:
   watch:
     types: started
