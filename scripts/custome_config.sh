@@ -20,6 +20,11 @@ sed -i -e 's/CONFIG_PACKAGE_smartdns=y/# CONFIG_PACKAGE_smartdns is not set/g' c
 sed -i -e 's/CONFIG_PACKAGE_hd-idle=y/# CONFIG_PACKAGE_hd-idle is not set/g' configs/rockchip/01-nanopi
 sed -i -e 's/CONFIG_PACKAGE_watchcat=y/# CONFIG_PACKAGE_watchcat is not set/g' configs/rockchip/01-nanopi
 sed -i -e 's/CONFIG_PACKAGE_aria2=y/# CONFIG_PACKAGE_aria2 is not set/g' configs/rockchip/01-nanopi
+sed -i -e 's/CONFIG_PACKAGE_ddns-scripts=y/# CONFIG_PACKAGE_ddns-scripts is not set/g' configs/rockchip/01-nanopi
+sed -i -e 's/CONFIG_PACKAGE_ddns-scripts-services=y/# CONFIG_PACKAGE_ddns-scripts-services is not set/g' configs/rockchip/01-nanopi
+sed -i -e 's/CONFIG_PACKAGE_minidlna=y/# CONFIG_PACKAGE_minidlna is not set/g' configs/rockchip/01-nanopi
+
+
 
 sed -i -e 's/CONFIG_LUCI_LANG_bg=y/# /g' configs/rockchip/02-luci_lang
 sed -i -e 's/CONFIG_LUCI_LANG_ca=y/# /g' configs/rockchip/02-luci_lang
