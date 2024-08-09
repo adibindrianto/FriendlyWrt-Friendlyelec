@@ -15,6 +15,7 @@ sed -i -e 's/CONFIG_PACKAGE_luci-app-smartdns=y/# CONFIG_PACKAGE_luci-app-smartd
 sed -i -e 's/CONFIG_PACKAGE_luci-app-ttyd=y/# CONFIG_PACKAGE_luci-app-ttyd is not set/g' configs/rockchip/01-nanopi
 sed -i -e 's/CONFIG_PACKAGE_luci-app-upnp=y/# CONFIG_PACKAGE_luci-app-upnp is not set/g' configs/rockchip/01-nanopi
 sed -i -e 's/CONFIG_PACKAGE_luci-app-watchcat=y/# CONFIG_PACKAGE_luci-app-watchcat is not set/g' configs/rockchip/01-nanopi
+sed -i -e 's/CONFIG_PACKAGE_luci-app-nft-qos=y/# CONFIG_PACKAGE_luci-app-nft-qos is not set/g' configs/rockchip/01-nanopi
 sed -i -e 's/CONFIG_PACKAGE_ttyd=y/# CONFIG_PACKAGE_ttyd is not set/g' configs/rockchip/01-nanopi
 sed -i -e 's/CONFIG_PACKAGE_smartdns=y/# CONFIG_PACKAGE_smartdns is not set/g' configs/rockchip/01-nanopi
 sed -i -e 's/CONFIG_PACKAGE_hd-idle=y/# CONFIG_PACKAGE_hd-idle is not set/g' configs/rockchip/01-nanopi
