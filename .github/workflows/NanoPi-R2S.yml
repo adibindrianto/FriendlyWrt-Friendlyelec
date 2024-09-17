@@ -81,7 +81,7 @@ jobs:
         cd project
         source ../scripts/add_packages.sh
         source ../scripts/custome_config.sh
-        sed -i 's/192.168.2.1/192.168.100.1/g' friendlywrt/target/linux/rockchip/armv8/base-files/etc/board.d/02_network
+        sed -i 's/192.168.2.1/10.10.10.1/g' friendlywrt/target/linux/rockchip/armv8/base-files/etc/board.d/02_network
 
     - name: Prepare dot config and feeds
       run: |
