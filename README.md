@@ -1,3 +1,3 @@
 Source: https://github.com/friendlyarm/Actions-FriendlyWrt
 
-IP: 10.10.10.1
+IP: 192.168.1.1
