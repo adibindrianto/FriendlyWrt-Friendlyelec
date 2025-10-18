@@ -33,7 +33,7 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
     strategy:
       matrix:
-        VERSION: ['24.10']
+        VERSION: ['21.02.0', '24.10.0']
         SET: [docker, non-docker]
 
     steps:
