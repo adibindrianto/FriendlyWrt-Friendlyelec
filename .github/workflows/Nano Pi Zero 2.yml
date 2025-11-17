@@ -1,4 +1,4 @@
-name: RK3528
+name: Nano Pi Zero 2
 on:
   watch:
     types: started
@@ -215,7 +215,7 @@ jobs:
         cd project
         case ${{ matrix.CPU }} in
         rk3528)
-          MODEL=ZERO2
+          MODEL=Nano-Pi-Zero-2
           ;;
         *)
           echo "unknow cpu"
